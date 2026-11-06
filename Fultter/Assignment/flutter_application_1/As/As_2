@@ -1,0 +1,28 @@
+import 'dart:io';
+
+void main() {
+  stdout.write("Enter your name... ");
+  String? name = stdin.readLineSync();
+
+  if (name == null || name.trim().isEmpty) {
+    print("Sorry, please input your name");
+    return;
+  }
+
+  stdout.write("Enter your age... ");
+  String? ageInput = stdin.readLineSync();
+
+  if (ageInput == null || ageInput.trim().isEmpty) {
+    print("Sorry, please input your age correctly");
+    return;
+  }
+
+  int? age = int.tryParse(ageInput);
+
+  if (age == null) {
+    print("Sorry, please input your age correctly");
+    return;
+  }
+
+  print("$name is $age years old.");
+}

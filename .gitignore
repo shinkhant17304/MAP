@@ -1,0 +1,9 @@
+.DS_Store
+.vscode/
+**/node_modules/
+**/.dart_tool/
+**/build/
+**/.widget_preview/
+**/.idea/
+*.docx
+/Fultter/Assignment/pdf/
